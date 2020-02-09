@@ -3,7 +3,6 @@
 
 Simple app for AWS CI/CD tests
 
-
 # Getting Started
 
 ### Reference Documentation
