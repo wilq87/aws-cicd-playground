@@ -35,13 +35,13 @@ These additional references should also help you:
 ./gradlew clean build
 
 # Docker
-Building layered JARs and unpacking it inside docker container.
 See:
 https://docs.spring.io/spring-boot/docs/2.3.0.BUILD-SNAPSHOT/gradle-plugin/reference/html//#packaging-layered-jars
+Building layered JARs and unpacking it inside docker container.
 https://spring.io/blog/2020/01/27/creating-docker-images-with-spring-boot-2-3-0-m1
 
-docker build . --tag awscicd
+To run as docker 
+make
 
-# Docker run
-
-docker run -p 8080:8080 awscicd
+To publish
+make publish version=$(date '+%Y%m%d-%H%M%S')
