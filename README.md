@@ -45,3 +45,12 @@ make
 
 To publish
 make publish version=$(date '+%Y%m%d-%H%M%S')
+
+# Deployment
+https://github.com/aws-samples/ecs-refarch-cloudformation
+https://aws.amazon.com/blogs/devops/use-aws-codedeploy-to-implement-blue-green-deployments-for-aws-fargate-and-amazon-ecs/
+https://aws.amazon.com/blogs/containers/aws-codedeploy-now-supports-linear-and-canary-deployments-for-amazon-ecs/
+
+# Cognito
+https://docs.aws.amazon.com/cognito/latest/developerguide/tutorial-create-user-pool.html
+https://www.baeldung.com/spring-security-oauth-cognito
