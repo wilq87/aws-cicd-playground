@@ -5,15 +5,16 @@ import org.springframework.security.config.annotation.web.reactive.EnableWebFlux
 import org.springframework.security.config.web.server.ServerHttpSecurity
 import org.springframework.security.web.server.SecurityWebFilterChain
 
-
 @EnableWebFluxSecurity
 class SecurityConfig {
 
     @Bean
     fun securitygWebFilterChain(http: ServerHttpSecurity): SecurityWebFilterChain? {
-        return http.authorizeExchange()
-                .pathMatchers("/login/oauth2/code/cognito").permitAll()
+        return http
+                .authorizeExchange()
+                .pathMatchers("/").permitAll()
                 .anyExchange().authenticated()
-                .and().build()
+                .and().oauth2Login().and()
+                .build()
     }
 }

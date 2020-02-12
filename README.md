@@ -46,6 +46,12 @@ make
 To publish
 make publish version=$(date '+%Y%m%d-%H%M%S')
 
+# Spring 5 Reactive Webflux
+https://www.baeldung.com/spring-security-5-reactive
+https://spring.io/blog/2019/04/12/going-reactive-with-spring-coroutines-and-kotlin-flow
+https://www.baeldung.com/spring-boot-kotlin-coroutines
+
+
 # Deployment
 https://github.com/aws-samples/ecs-refarch-cloudformation
 https://aws.amazon.com/blogs/devops/use-aws-codedeploy-to-implement-blue-green-deployments-for-aws-fargate-and-amazon-ecs/
@@ -54,3 +60,5 @@ https://aws.amazon.com/blogs/containers/aws-codedeploy-now-supports-linear-and-c
 # Cognito
 https://docs.aws.amazon.com/cognito/latest/developerguide/tutorial-create-user-pool.html
 https://www.baeldung.com/spring-security-oauth-cognito
+https://www.baeldung.com/spring-oauth-login-webflux
+https://docs.spring.io/spring-security/site/docs/current/reference/htmlsingle/#oauth2client
